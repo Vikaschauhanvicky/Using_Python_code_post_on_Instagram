@@ -1,0 +1,17 @@
+from instabot import Bot
+from PIL import Image
+import time
+username-""
+password=""
+bot=Bot()
+bot.login(username=username,password=password,use_cookie=False, ask_for_code=True)
+image_path=""
+image=image.open(image_path)
+width,height(image.size
+min_dimension=min(width,height)
+resized_image=image.crop(1,1,min_dimension, min_dimension)
+temp_image_path="temp.jpg"
+resized_image.save(temp_image_path)
+caption=""
+bot.upload_photo(temp_image_path, caption=caption)
+bot.logout()
